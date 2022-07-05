@@ -1,0 +1,10 @@
+@mixin flexbox($direction:column,$justify:space-between,$item-align:center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items:$item-align ;
+    justify-content: $justify;
+}
+
+%shadow{
+    box-shadow: 0px 4px 9px rgb(0 0 0 / 28%);
+}

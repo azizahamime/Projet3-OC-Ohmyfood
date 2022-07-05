@@ -1,0 +1,32 @@
+@import '../utils/mixins';
+header{
+    @extend %shadow;
+    position: relative;;
+    .container{
+        @include flexbox(row);
+    }
+    .header__icon{
+        width:fit-content;
+        a{
+            color:#000;
+        }
+    }
+    .header__logo{
+        width: 100%;
+        img{
+            width:180px;
+            height: 40px;
+            display: block;
+            margin: 15px auto;   
+        }
+    }
+    
+}
+
+#homepage{
+    .header__icon{
+        i{
+            display: none;
+        }
+    }
+}
