@@ -1,0 +1,19 @@
+/******************************************************************
+                       general style
+*******************************************************************/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'roboto','sans-serif';
+    font-size: 16px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1800px;
+}
