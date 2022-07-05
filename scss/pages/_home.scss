@@ -1,0 +1,117 @@
+@import '../utils/variables';
+.location{
+    background-color:#EAEAEA ;
+}
+
+#slider{
+    padding: 60px 0px;
+    text-align: center;
+    background-color: $pri-background;
+    h2{
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 60px;
+        color:#7e7e7e;
+    }
+}
+
+#operations{
+    padding: 60px 0px;
+    h2{
+        margin-bottom: 20px;
+    }
+    ul{
+        @include flexbox(column);
+        list-style: none;
+        counter-reset: liste; 
+        li{
+            width:100%;
+            padding: 30px;
+            background-color: $pri-background;
+            border-radius: 30px;
+            margin:15px 0; 
+            position: relative;
+            @extend %shadow;
+            &::before{
+                counter-increment: liste;
+                content: counter(liste);
+                border-radius: 50%;
+                padding: 5px 10px;
+                color:#fff;
+                background-color: #9356DC;
+                position:absolute;
+                top:25px;
+                left:-12px;
+            }
+            i{
+                margin:0 15px;
+                font-size: 20px;
+                color:#7e7e7e;
+            }
+            span{
+                font-weight: 700;
+                font-size: 18px;
+            }
+            &:hover{
+                background-color: lighten($primary, 35);
+                i{
+                    color:$primary !important;
+                }
+            }
+        }  
+    }
+}
+
+#restaurants{
+    padding: 60px 0px;
+    background-color: $pri-background;
+    .restaurant-container{
+        @include flexbox(column,space-between,flex-start);
+        gap:30px;
+        flex-wrap: wrap;
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+    a{
+        text-decoration: none;
+        color:#000;
+        width: 100%;
+        &:hover{
+            color:#000;
+        }
+    }
+    figure{
+        border-radius: 20px;
+        background-color: #fff;
+        position: relative;
+        @extend %shadow;
+        pre{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color:darken($tertiary, 40);
+            padding:7px 10px;
+            background: $tertiary;
+            font-family: 'Roboto';
+            border-radius: 2px;
+            font-weight: 700;
+        }
+        img{
+            height: 180px;
+            width:100%;
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+        }
+        figcaption{
+            padding: 10px 15px;
+            @include flexbox(row);
+        } 
+    }
+}

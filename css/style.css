@@ -22,7 +22,7 @@ body {
   max-width: 1800px;
 }
 
-header {
+#restaurants figure, #operations ul li, header {
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.28);
 }
 
@@ -53,6 +53,133 @@ header .header__logo img {
 
 #homepage .header__icon i {
   display: none;
+}
+
+/*********colors**********/
+/*************background******/
+/*********responsive***********/
+.location {
+  background-color: #EAEAEA;
+}
+
+#slider {
+  padding: 60px 0px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+#slider h2 {
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+#slider p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  color: #7e7e7e;
+}
+
+#operations {
+  padding: 60px 0px;
+}
+#operations h2 {
+  margin-bottom: 20px;
+}
+#operations ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  counter-reset: liste;
+}
+#operations ul li {
+  width: 100%;
+  padding: 30px;
+  background-color: #f6f6f6;
+  border-radius: 30px;
+  margin: 15px 0;
+  position: relative;
+}
+#operations ul li::before {
+  counter-increment: liste;
+  content: counter(liste);
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #9356DC;
+  position: absolute;
+  top: 25px;
+  left: -12px;
+}
+#operations ul li i {
+  margin: 0 15px;
+  font-size: 20px;
+  color: #7e7e7e;
+}
+#operations ul li span {
+  font-weight: 700;
+  font-size: 18px;
+}
+#operations ul li:hover {
+  background-color: #f2eafb;
+}
+#operations ul li:hover i {
+  color: #9356DC !important;
+}
+
+#restaurants {
+  padding: 60px 0px;
+  background-color: #f6f6f6;
+}
+#restaurants .restaurant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#restaurants h2 {
+  margin-bottom: 30px;
+}
+#restaurants a {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+}
+#restaurants a:hover {
+  color: #000;
+}
+#restaurants figure {
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+}
+#restaurants figure pre {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #278870;
+  padding: 7px 10px;
+  background: #99E2D0;
+  font-family: "Roboto";
+  border-radius: 2px;
+  font-weight: 700;
+}
+#restaurants figure img {
+  height: 180px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+#restaurants figure figcaption {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*********colors**********/
