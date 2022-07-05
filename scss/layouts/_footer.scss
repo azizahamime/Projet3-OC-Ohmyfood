@@ -1,0 +1,29 @@
+@import '../utils/variables';
+footer{
+    padding: 60px 0;
+    background-color: $ter-background;
+    svg{
+        margin-bottom: 15px;
+        width:120px;
+        path{
+            fill:#fff !important;
+        }
+    }  
+    .dif-links{
+        list-style: none;
+        @include flexbox(column,space-between,flex-start);
+        row-gap: 15px;
+        @media (min-width:$tablet-breakpoint){
+            @include flexbox(row);
+            margin-right: 50px;
+        }
+    }  
+    a{
+        color:#fff;
+        text-decoration: none;
+        span{
+            margin-left: 10px;
+        }
+    }
+    
+}

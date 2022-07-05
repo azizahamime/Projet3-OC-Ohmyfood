@@ -22,4 +22,76 @@ body {
   max-width: 1800px;
 }
 
+header {
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.28);
+}
+
+header {
+  position: relative;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header__icon {
+  width: fit-content;
+}
+header .header__icon a {
+  color: #000;
+}
+header .header__logo {
+  width: 100%;
+}
+header .header__logo img {
+  width: 180px;
+  height: 40px;
+  display: block;
+  margin: 15px auto;
+}
+
+#homepage .header__icon i {
+  display: none;
+}
+
+/*********colors**********/
+/*************background******/
+/*********responsive***********/
+footer {
+  padding: 60px 0;
+  background-color: #353535;
+}
+footer svg {
+  margin-bottom: 15px;
+  width: 120px;
+}
+footer svg path {
+  fill: #fff !important;
+}
+footer .dif-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+@media (min-width: 996px) {
+  footer .dif-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a span {
+  margin-left: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
