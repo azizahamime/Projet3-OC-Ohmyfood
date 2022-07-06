@@ -22,7 +22,7 @@ body {
   max-width: 1800px;
 }
 
-.button, #restaurants figure, #operations ul li, header {
+#menu-restaurant section .menu__item, .button, #restaurants figure, #operations ul li, header {
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.28);
 }
 
@@ -291,6 +291,115 @@ form #location__select {
 }
 .fa-stack .fa-solid:hover {
   opacity: 1;
+}
+
+#menu-restaurant section .menu__item, header, #operations ul li, #restaurants figure, .button {
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.28);
+}
+
+/*********colors**********/
+/*************background******/
+/*********responsive***********/
+.slider-menu img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+#menu-restaurant {
+  background-color: #eaeaea;
+  padding: 30px 0;
+  margin-top: -60px;
+  z-index: 10;
+  position: relative;
+  border-radius: 40px 40px 0 0;
+}
+#menu-restaurant .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#menu-restaurant .title-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#menu-restaurant .title-menu h1 {
+  font-family: shrikhand;
+  font-weight: 500;
+}
+#menu-restaurant .menus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+#menu-restaurant section {
+  margin: 15px 0;
+  width: 100%;
+}
+#menu-restaurant section h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+#menu-restaurant section hr {
+  width: 50px;
+  height: 5px;
+  background-color: #99E2D0;
+  border: none;
+  margin-bottom: 20px;
+}
+#menu-restaurant section .menu {
+  margin-bottom: 70px;
+}
+#menu-restaurant section .menu__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#menu-restaurant section .menu__item--description {
+  overflow: hidden;
+  padding: 10px 10px 10px 20px;
+}
+#menu-restaurant section .menu__item--description h4 {
+  margin-bottom: 15px;
+}
+#menu-restaurant section .menu__item--price {
+  display: flex;
+}
+#menu-restaurant section .menu__item--price span {
+  display: block;
+  align-self: flex-end;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+#menu-restaurant section .menu__item--selected {
+  width: 70px;
+  background-color: #99E2D0;
+  align-self: stretch;
+  padding: 25px;
+}
+#menu-restaurant section .menu__item--selected i {
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  margin: auto;
+  color: #99E2D0;
+}
+#menu-restaurant .button {
+  padding: 20px 60px;
 }
 
 /*********colors**********/

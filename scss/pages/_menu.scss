@@ -1,0 +1,100 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+.slider-menu{
+    img{
+        object-fit: cover;
+        height: 400px;
+        width: 100%;   
+    }
+}
+#menu-restaurant{
+    background-color: $sec-background;
+    padding: 30px 0;
+    margin-top: -60px;
+    z-index: 10;
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    .container{
+        @include flexbox;
+    }
+    .title-menu{
+        @include flexbox(row,space-between,center);
+        width: 100%;
+        h1{
+            font-family: shrikhand;
+            font-weight: 500;
+        }
+    }
+    .menus-container {
+        @include flexbox(column);
+        width: 100%;
+        margin: auto;
+    }
+    section{
+        margin:15px 0;
+        width: 100%;
+        h2{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 22px;
+            margin-bottom: 7px;
+        }
+        hr{
+            width:50px;
+            height: 5px;
+            background-color: $tertiary;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .menu{
+            margin-bottom: 70px;            
+           &__item{
+                @include flexbox(row,space-between,flex-start);
+                background: #fff;
+                margin-bottom: 20px;
+                border-radius: 20px;
+                overflow: hidden; 
+                @extend %shadow;
+               &--description{
+                    overflow: hidden ;
+                    padding: 10px 10px 10px 20px;               
+                    h4{
+                        margin-bottom: 15px;
+                        
+                    }
+                   
+                }
+                &--price{
+                    display: flex;       
+                    span{
+                        display: block;
+                        align-self: flex-end;
+                        font-weight: 700;
+                        padding: 10px 20px;
+                    }
+                }
+                &--selected{
+                    width:70px;
+                    background-color: $tertiary;
+                    align-self: stretch;
+                    padding: 25px;
+                    
+                    
+                    i{
+                        background-color: #fff;
+                        padding: 6px;
+                        border-radius:50%;
+                        margin:auto;
+                        color:$tertiary;
+                    }
+                }
+               
+            }  
+        }
+                       
+    }
+    .button{
+        padding:20px 60px;
+    }
+}
+
