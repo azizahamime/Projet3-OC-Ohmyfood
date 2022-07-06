@@ -217,6 +217,25 @@ header .header__logo img {
     visibility: hidden;
   }
 }
+form {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 20px 10px 20px 80px;
+  color: #353535;
+}
+form label {
+  margin-right: 10px;
+}
+form #location__select {
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  appearance: none;
+  width: fit-content;
+  color: #353535;
+  background-color: transparent;
+}
+
 .button {
   padding: 17px 20px;
   border-radius: 50px;
