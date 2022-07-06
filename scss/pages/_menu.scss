@@ -79,8 +79,8 @@
                     background-color: $tertiary;
                     align-self: stretch;
                     padding: 25px;
-                    
-                    
+                    margin-right:-75px;
+                    transition: margin .5s ease-in-out;
                     i{
                         background-color: #fff;
                         padding: 6px;
@@ -88,6 +88,14 @@
                         margin:auto;
                         color:$tertiary;
                     }
+                }
+                &:hover .menu__item--price> .menu__item--selected{
+                    margin-right: 0;     
+                    i{
+                        transform: rotate(360deg);
+                        transition-delay: 2s;
+                        transition: transform .5s ease-in;
+                    } 
                 }
                
             }  
