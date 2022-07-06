@@ -182,6 +182,41 @@ header .header__logo img {
   justify-content: space-between;
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  animation: opacity-load 3s ease-in-out forwards;
+}
+.loader i {
+  font-size: 50px;
+  color: #9356DC;
+}
+.loader h2 {
+  font-family: roboto;
+  font-size: 22px;
+  font-weight: 700;
+  color: #9356DC;
+}
+
+@keyframes opacity-load {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .button {
   padding: 17px 20px;
   border-radius: 50px;
