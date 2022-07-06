@@ -250,6 +250,22 @@ form #location__select {
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.4);
 }
 
+.fa-stack {
+  display: block;
+}
+.fa-stack .fa-solid {
+  background: linear-gradient(190deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  display: block;
+  transition: opacity 1s ease-out;
+}
+.fa-stack .fa-solid:hover {
+  opacity: 1;
+}
+
 /*********colors**********/
 /*************background******/
 /*********responsive***********/

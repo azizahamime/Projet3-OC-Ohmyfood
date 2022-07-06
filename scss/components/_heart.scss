@@ -1,0 +1,17 @@
+.fa-stack{
+    display: block;
+    .fa-solid{
+        background: linear-gradient(190deg,$primary,$secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        display: block;
+        transition: opacity 1s ease-out;
+       
+    } 
+    .fa-solid:hover{
+       opacity: 1;
+    }      
+}
+
