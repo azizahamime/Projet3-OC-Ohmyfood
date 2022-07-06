@@ -29,10 +29,14 @@
         @include flexbox(column);
         width: 100%;
         margin: auto;
+        @media (min-width:$tablet-breakpoint){
+            @include flexbox(row);
+        }
     }
     section{
         margin:15px 0;
         width: 100%;
+
         @include animation-slideUp; 
         h2{
             text-transform: uppercase;
@@ -48,7 +52,7 @@
             margin-bottom: 20px;
         }
         .menu{
-            margin-bottom: 70px;            
+            margin-bottom: 50px;            
            &__item{
                 @include flexbox(row,space-between,flex-start);
                 background: #fff;
@@ -65,7 +69,7 @@
                     }
                     p{
                         @extend %text-ellepsis;
-                    }                   
+                    }
                 }
                 &--price{
                     display: flex;       
@@ -99,10 +103,11 @@
                         transition: transform .5s ease-in;
                     } 
                 }
-               
             }  
         }
-                       
+        @media (min-width:$tablet-breakpoint){
+            width:31%;
+        }                  
     }
     .button{
         padding:20px 60px;

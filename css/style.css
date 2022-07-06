@@ -353,6 +353,14 @@ form #location__select {
   width: 100%;
   margin: auto;
 }
+@media (min-width: 996px) {
+  #menu-restaurant .menus-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 #menu-restaurant section {
   margin: 15px 0;
   width: 100%;
@@ -401,7 +409,7 @@ form #location__select {
   margin-bottom: 20px;
 }
 #menu-restaurant section .menu {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 #menu-restaurant section .menu__item {
   display: flex;
@@ -451,6 +459,11 @@ form #location__select {
   transform: rotate(360deg);
   transition-delay: 2s;
   transition: transform 0.5s ease-in;
+}
+@media (min-width: 996px) {
+  #menu-restaurant section {
+    width: 31%;
+  }
 }
 #menu-restaurant .button {
   padding: 20px 60px;
