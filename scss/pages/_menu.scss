@@ -33,6 +33,7 @@
     section{
         margin:15px 0;
         width: 100%;
+        @include animation-slideUp; 
         h2{
             text-transform: uppercase;
             font-weight: 400;

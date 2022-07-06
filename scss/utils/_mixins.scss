@@ -8,3 +8,22 @@
 %shadow{
     box-shadow: 0px 4px 9px rgb(0 0 0 / 28%);
 }
+
+@mixin animation-slideUp {
+    @for $i from 1 through 5 { 
+        & .menu__item:nth-child(#{$i}) {
+            animation: slideUp 1s forwards ease-in;
+            animation-delay: #{$i * 0.25}s;
+        }
+    }
+    @keyframes slideUp {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
