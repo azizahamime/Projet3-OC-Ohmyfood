@@ -128,6 +128,20 @@ header .header__logo img {
 #operations ul li:hover i {
   color: #9356DC !important;
 }
+@media (min-width: 996px) {
+  #operations ul li {
+    width: 480px;
+  }
+}
+@media (min-width: 996px) {
+  #operations ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
 
 #restaurants {
   padding: 60px 0px;
@@ -141,6 +155,14 @@ header .header__logo img {
   gap: 30px;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  #restaurants .restaurant-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 #restaurants h2 {
   margin-bottom: 30px;
 }
@@ -151,6 +173,11 @@ header .header__logo img {
 }
 #restaurants a:hover {
   color: #000;
+}
+@media (min-width: 768px) {
+  #restaurants a {
+    width: 47%;
+  }
 }
 #restaurants figure {
   border-radius: 20px;
