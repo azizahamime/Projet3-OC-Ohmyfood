@@ -61,9 +61,11 @@
                     padding: 10px 10px 10px 20px;               
                     h4{
                         margin-bottom: 15px;
-                        
+                        @extend %text-ellepsis;
                     }
-                   
+                    p{
+                        @extend %text-ellepsis;
+                    }                   
                 }
                 &--price{
                     display: flex;       

@@ -26,6 +26,13 @@ body {
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.28);
 }
 
+#menu-restaurant section .menu__item--description p, #menu-restaurant section .menu__item--description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+  white-space: nowrap;
+  display: block;
+}
+
 header {
   position: relative;
 }
@@ -295,6 +302,13 @@ form #location__select {
 
 #menu-restaurant section .menu__item, header, #operations ul li, #restaurants figure, .button {
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.28);
+}
+
+#menu-restaurant section .menu__item--description p, #menu-restaurant section .menu__item--description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+  white-space: nowrap;
+  display: block;
 }
 
 /*********colors**********/
